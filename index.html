@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURLUX - Автомобильные товары премиум класса</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Заголовок -->
+    <header id="header">
+        <nav>
+            <a href="javascript:void(0)" class="logo">FURLUX</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#products">Товары</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Главная секция -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>FURLUX</h1>
+                <p>Премиальные автомобильные товары на Wildberries. Качество, надежность и стиль для вашего автомобиля.</p>
+                <a href="#products" class="btn">Посмотреть товары</a>
+                <a href="#contact" class="btn btn-secondary">Связаться с нами</a>
+            </div>
+            <div class="hero-image floating">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Автомобильные товары FURLUX">
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные товары -->
+    <section class="popular-products" id="products">
+        <div class="container">
+            <h2 class="section-title fade-in">Популярные товары</h2>
+            <div class="products-grid">
+                <div class="product-card fade-in" data-product="lights">
+                    <i class="fas fa-lightbulb product-icon"></i>
+                    <h3>Фонари габаритные</h3>
+                    <p>Высококачественные LED фонари для улучшения видимости и безопасности</p>
+                    <div class="product-price">от 1 990 ₽</div>
+                    <a href="javascript:void(0)" class="btn">Подробнее</a>
+                </div>
+                <div class="product-card fade-in" data-product="tweeters">
+                    <i class="fas fa-volume-up product-icon"></i>
+                    <h3>Твитеры</h3>
+                    <p>Профессиональные автомобильные динамики для кристально чистого звука</p>
+                    <div class="product-price">от 2 490 ₽</div>
+                    <a href="javascript:void(0)" class="btn">Подробнее</a>
+                </div>
+                <div class="product-card fade-in" data-product="led-strips">
+                    <i class="fas fa-charging-station product-icon"></i>
+                    <h3>Светодиодные ленты</h3>
+                    <p>Декоративные и функциональные LED ленты для тюнинга автомобиля</p>
+                    <div class="product-price">от 1 590 ₽</div>
+                    <a href="javascript:void(0)" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="#all-products" class="btn" id="allProductsBtn">Все товары</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2 class="section-title" style="text-align: left; color: white;">О компании FURLUX</h2>
+                    <p>Мы специализируемся на продаже высококачественных автомобильных товаров на маркетплейсе Wildberries. Наша миссия - предоставить автовладельцам доступ к премиальным товарам по доступным ценам.</p>
+                    <p>За годы работы мы зарекомендовали себя как надежный поставщик автомобильных аксессуаров, электроники и тюнинга. Каждый товар проходит строгий контроль качества.</p>
+                </div>
+                <div class="about-stats fade-in">
+                    <div class="stat-item">
+                        <span class="stat-number">5000+</span>
+                        <span>Довольных клиентов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span>Товаров в каталоге</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span>Года на рынке</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9</span>
+                        <span>Рейтинг на WB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title fade-in">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <i class="fas fa-shipping-fast service-icon"></i>
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставка по всей России через Wildberries за 1-3 дня</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-shield-alt service-icon"></i>
+                    <h3>Гарантия качества</h3>
+                    <p>Официальная гарантия на все товары до 2 лет</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-headset service-icon"></i>
+                    <h3>Поддержка 24/7</h3>
+                    <p>Круглосуточная техническая поддержка и консультации</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-tools service-icon"></i>
+                    <h3>Помощь в установке</h3>
+                    <p>Подробные инструкции и видео по установке товаров</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-medal service-icon"></i>
+                    <h3>Сертификация</h3>
+                    <p>Все товары имеют необходимые сертификаты качества</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-percent service-icon"></i>
+                    <h3>Акции и скидки</h3>
+                    <p>Регулярные акции и скидки для постоянных покупателей</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in" style="color: white;">Свяжитесь с нами</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@furlux.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>Москва, ул. Автомобильная, 123</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-telegram"></i>
+                        <div>
+                            <h4>Telegram</h4>
+                            <p>@furlux_support</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-in">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Телефон">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Сообщение" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="border: none; cursor: pointer;">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FURLUX</h3>
+                    <p>Премиальные автомобильные товары на Wildberries. Качество и надежность для вашего автомобиля.</p>
+                    <div class="social-links">
+                        <a href="https://vk.com/" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Категории товаров</h3>
+                    <ul>
+                        <li><a href="https://www.wildberries.ru/" target="_blank">Освещение</a></li>
+                        <li><a href="https://www.wildberries.ru/" target="_blank">Аудиосистемы</a></li>
+                        <li><a href="https://www.wildberries.ru/" target="_blank">Электроника</a></li>
+                        <li><a href="https://www.wildberries.ru/" target="_blank">Тюнинг</a></li>
+                        <li><a href="https://www.wildberries.ru/" target="_blank">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Информация</h3>
+                    <ul>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="javascript:void(0)">Доставка и оплата</a></li>
+                        <li><a href="javascript:void(0)">Гарантия</a></li>
+                        <li><a href="javascript:void(0)">Возврат товара</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Поддержка</h3>
+                    <ul>
+                        <li><a href="javascript:void(0)">Часто задаваемые вопросы</a></li>
+                        <li><a href="javascript:void(0)">Инструкции по установке</a></li>
+                        <li><a href="#contact">Техподдержка</a></li>
+                        <li><a href="#contact">Обратная связь</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FURLUX. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно товара -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Контент будет добавлен через JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
